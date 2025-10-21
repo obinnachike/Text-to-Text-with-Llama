@@ -1,6 +1,6 @@
 <h1 align="center">🦙 LLaMA 2 GPU Inference</h1> <p align="center">Fast Local Inference with <b>llama-cpp-python</b> + CUDA Acceleration</p> <p align="center"> <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python"> <img src="https://img.shields.io/badge/llama--cpp--python-GPU-green?logo=nvidia"> <img src="https://img.shields.io/badge/HuggingFace-Enabled-orange?logo=huggingface"> <img src="https://img.shields.io/badge/CUDA-Acceleration-yellow?logo=nvidia"> <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg"> </p>
 
- Run Meta’s LLaMA 2 models locally — fast and GPU-optimized — using llama-cpp-python.
+  Run Meta’s LLaMA 2 models locally — fast and GPU-optimized — using llama-cpp-python.
 This project demonstrates GPU-based inference, quantized model loading, and prompt-based text generation powered by CUDA and GGUF models from Hugging Face.
 
  Key Features
@@ -16,6 +16,7 @@ This project demonstrates GPU-based inference, quantized model loading, and prom
  Customizable inference parameters (threads, GPU layers, temperature, etc.)
 
  Installation & Setup
+ 
  Verify GPU
 !nvidia-smi
 
@@ -24,9 +25,11 @@ Make sure your GPU and CUDA drivers are correctly installed.
 
  Install Dependencies
 # Install with CUDA enabled
+
 !CMAKE_ARGS="-DGGML_CUDA=on" FORCE_CMAKE=1 pip install llama-cpp-python --upgrade --force-reinstall --no-cache-dir --verbose
 
 # Additional packages
+
 !pip install huggingface_hub
 !pip install numpy
 
@@ -69,6 +72,7 @@ For smaller GPUs (e.g., 8GB), reduce this value.
 
  Prompt & Response
  Create Prompt Template
+ 
 prompt = "Write a linear regression code"
 
 prompt_template = f'''SYSTEM: You are a helpful, respectful and honest assistant.
