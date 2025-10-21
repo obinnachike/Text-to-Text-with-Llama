@@ -142,4 +142,4 @@ Obinna Chike
  AI/ML Researcher & Developer
 
 
-<p align="center"> <b>🦙 LLaMA 2 — Run Large Language Models Locally, Fast, and GPU-Optimized.</b> </p>
+<p align="center"> <b> LLaMA 2 — Run Large Language Models Locally, Fast, and GPU-Optimized.</b> </p>
